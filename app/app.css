@@ -12,5 +12,7 @@ button {
 .message {
     font-size: 20;
     color: #284848;
-    horizontal-align: center;
+    horizontal-align: right;
+    border-color: black;
+    border-radius: 3px;
 }
