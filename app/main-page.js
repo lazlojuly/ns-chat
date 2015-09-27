@@ -1,6 +1,8 @@
-var vmModule = require("./main-view-model");
+var messageModel = require("./MessageModel");
 function pageLoaded(args) {
     var page = args.object;
-    page.bindingContext = vmModule.mainViewModel;
+    page.bindingContext = messageModel.messageModel;
+
+
 }
 exports.pageLoaded = pageLoaded;
