@@ -1,7 +1,7 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
   <StackLayout>
     
-	<Label text="{{ content }}" cssClasss="message" />
+	<Label text="{{ content }}" cssClass="message" />
 
   </StackLayout>
 </Page>

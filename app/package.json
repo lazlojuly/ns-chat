@@ -1,26 +1,24 @@
 {
-	"name": "tns-template-hello-world",
+	"name": "ns-chat",
 	"main": "app.js",
 	"jsoptions": "--expose_gc",
 	"version": "1.3.0",
-	"author": "Telerik <support@telerik.com>",
-	"description": "Nativescript hello-world project template",
-	"license": "BSD",
+	"author": "Laszlo and Javier",
+	"description": "An experimental instant messaging application written in Nativescript",
+	"license": "MIT",
 	"keywords": [
-		"telerik",
-		"mobile",
 		"nativescript",
 		"{N}",
-		"tns",
-		"appbuilder",
-		"template"
+		"chat",
+		"instant messaging",
+		"mobile"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/NativeScript/template-hello-world.git"
+		"url": "git://github.com/lazlojuly/ns-chat.git"
 	},
 	"bugs": {
-		"url": "https://github.com/NativeScript/template-hello-world/issues"
+		"url": "https://github.com/lazlojuly/ns-chat/issues"
 	},
-	"homepage": "https://github.com/NativeScript/template-hello-world"
+	"homepage": "https://github.com/lazlojuly/ns-chat"
 }
