@@ -10,3 +10,5 @@ function MessageModel(model) {
 	return viewModel;
 
 }
+
+module.exports = MessageModel;

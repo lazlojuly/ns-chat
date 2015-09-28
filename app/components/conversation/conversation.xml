@@ -1,5 +1,16 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
 	<StackLayout>
-		Hello World
+		<Label text="{{ content }}" cssClass="message" textWrap="true"/>
 	</StackLayout>
+
+	<ScrollView>
+		<Repeater items="{{ messages }}">
+
+			<Repeater.itemTemplate>
+				<Label text="{{ content }}" margin="10"
+					cssClass="message" textWrap="true"/>
+			</Repeater.itemTemplate>
+
+		</Repeater>
+	</ScrollView>
 </Page>
