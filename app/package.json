@@ -4,7 +4,7 @@
 	"jsoptions": "--expose_gc",
 	"version": "1.3.0",
 	"author": "Laszlo and Javier",
-	"description": "An experimental instant messaging application written in Nativescript",
+	"description": "An experimental instant messaging application written in NativeScript",
 	"license": "MIT",
 	"keywords": [
 		"nativescript",
