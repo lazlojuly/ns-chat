@@ -1,20 +1,21 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
 
-	<StackLayout orientation="vertical">
+	<DockLayout stretchLastChild="true" >
 
-		<TextField id="messageInput" text="{{ messageInput }}"
-			hint="Enter your message..." />
-		<Button text="Send" tap="addMessage" />
+		<StackLayout dock="bottom">
+			<TextField id="messageInput" text="{{ messageInput }}"
+				hint="Enter your message..." />
+			<Button text="Send" tap="addMessage" />
+		</StackLayout>
 
 		<ScrollView>
-			<Repeater items="{{ messageList }}">
-				<Repeater.itemTemplate>
-					<Label text="{{ content }}" margin="10"
-						cssClass="message" textWrap="true"/>
-				</Repeater.itemTemplate>
-			</Repeater>
+				<Repeater items="{{ messageList }}">
+					<Repeater.itemTemplate>
+						<Label text="{{ content }}" margin="10"
+							cssClass="message" textWrap="true"/>
+					</Repeater.itemTemplate>
+				</Repeater>
 		</ScrollView>
 
-	</StackLayout>
-
+	</DockLayout>
 </Page>
