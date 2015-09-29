@@ -2,11 +2,12 @@
 
 	<StackLayout orientation="vertical">
 
-		<TextField id="message_input" hint="Enter your message..." />
-		<Button text="Send" tap="sendMessage" />
+		<TextField id="messageInput" text="{{ messageInput }}"
+			hint="Enter your message..." />
+		<Button text="Send" tap="addMessage" />
 
 		<ScrollView>
-			<Repeater items="{{ messages }}">
+			<Repeater items="{{ messageList }}">
 				<Repeater.itemTemplate>
 					<Label text="{{ content }}" margin="10"
 						cssClass="message" textWrap="true"/>

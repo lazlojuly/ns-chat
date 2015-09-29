@@ -1,0 +1,16 @@
+Label {
+	margin: 10;
+	horizontal-align: left;
+	vertical-align: center;
+}
+.message_input {
+	border-radius: 2px;
+	border-width: 3;
+	border-style: solid;
+	border-color: grey;
+}
+
+Button {
+	margin: 10;
+	padding: 10;
+}

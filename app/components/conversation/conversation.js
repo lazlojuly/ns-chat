@@ -1,19 +1,21 @@
-var MessageModel = require('../../shared/MessageModel');
+var observable = require("data/observable");
+var MessagesListViewModel = require('../../shared/MessagesListViewModel');
 
-var message = new MessageModel({
-	content:'This is a long message requiring text wrapping for the label element.',
-	date:new Date()
+var messages = new MessagesListViewModel([]);
+var pageData = new observable.Observable({
+	messageInput: "",
+	messageList: messages,
 });
-
-var pageVars = {
-	messages:[
-		message,message,message,message,
-		message,message,message,message,
-		message,message,message,message
-	]
-};
 
 exports.pageLoaded = function(args) {
 	var page = args.object;
-	page.bindingContext = pageVars;
+	page.bindingContext = pageData;
+};
+
+exports.addMessage = function() {
+
+	if (pageData.get("messageInput").trim() !== "") {
+		messages.add(pageData.get("messageInput").trim());
+		pageData.set("messageInput", "");
+	}
 };
