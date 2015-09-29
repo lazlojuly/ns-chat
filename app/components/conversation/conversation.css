@@ -8,6 +8,8 @@ Label {
 	border-width: 3;
 	border-style: solid;
 	border-color: grey;
+	padding: 3;
+	font-size:16;
 }
 
 Button {

@@ -1,8 +1,9 @@
 .message {
 	font-size: 20;
 	color: #284848;
-	border-width: 2px;
+	border-width: 3;
 	border-color: black;
-	border-radius: 3px;
-	background-color: #FFFFEA;
+	border-radius: 3;
+	background-color: blue;
+	color:white
 }
