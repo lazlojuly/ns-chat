@@ -12,7 +12,7 @@
 				<Repeater items="{{ messageList }}">
 					<Repeater.itemTemplate>
 						<Label text="{{ content }}" margin="10"
-							cssClass="message" textWrap="true"/>
+							cssClass="{{ messageCss }}" textWrap="true"/>
 					</Repeater.itemTemplate>
 				</Repeater>
 		</ScrollView>

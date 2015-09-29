@@ -4,8 +4,8 @@ function MessagesListViewModel(messages) {
 
 	var viewModel = new observableArray.ObservableArray(messages);
 
-	viewModel.add = function(txt) {
-		viewModel.push({content:txt,date:new Date()});
+	viewModel.add = function(obj) {
+		viewModel.push(obj);
 	};
 
 	return viewModel;
