@@ -8,7 +8,7 @@
 			<Button text="Send" tap="addMessage" />
 		</StackLayout>
 
-		<ScrollView>
+		<ScrollView id="messageScroll">
 				<Repeater items="{{ messageList }}">
 					<Repeater.itemTemplate>
 						<Label text="{{ content }}" margin="10"
